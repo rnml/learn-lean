@@ -1,6 +1,6 @@
 def hello := "world"
 
-theorem α : 2 + 2 = 4 := by
-  rfl
+def helloWorld : IO Unit := do
+  IO.println "Hello Big World"
 
-#eval hello
+#eval helloWorld
