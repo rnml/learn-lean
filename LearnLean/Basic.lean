@@ -5,4 +5,4 @@ def helloWorld : IO Unit := do
   let adj := content.trimAscii.toString
   IO.println s!"Hello Big {adj} World"
 
-#eval! helloWorld
+#eval helloWorld
