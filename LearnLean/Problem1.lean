@@ -8,7 +8,7 @@ def parseNum (chars : List Char) : Nat :=
 def Input := List (Dir × Nat)
 
 def loadInput : IO Input := do
-  let content ← IO.FS.readFile "LearnLean/advent-of-code-2025-input.1"
+  let content ← IO.FS.readFile "LearnLean/input.1"
   let content := content.trimAscii.toString
   let lines := content.splitOn "\n"
   return (
